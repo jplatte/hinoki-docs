@@ -1,0 +1,9 @@
+asset_dir = "assets"
+template_dir = "templates"
+
+[content."*.md"]
+process = "markdown_to_html"
+path = "{source_dir}/{source_file_stem}/index.html"
+
+[content."**/index.md"]
+path = "{source_dir}/index.html"
