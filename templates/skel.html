@@ -9,8 +9,10 @@
     {%- if page.title is defined %}{{ page.title }} | {% endif -%}
     Hinoki</title>
 
-<link rel="stylesheet" href="/bulma-no-helpers.css.map">
-<link rel="stylesheet" href="/hinoki-docs.css">
+<!-- broken... https://github.com/jgthms/bulma/issues/3894 -->
+<!--<link rel="stylesheet" href="/css/bulma-no-helpers.min.css">-->
+<link rel="stylesheet" href="/css/bulma.min.css">
+<link rel="stylesheet" href="/css/hinoki-docs.css">
 
 {% block content %}{% endblock content %}
 
